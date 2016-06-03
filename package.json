@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/damsonn/loco-tycoon#readme",
   "dependencies": {
+    "lodash": "^4.13.1",
     "micro": "^3.0.0"
   }
 }
