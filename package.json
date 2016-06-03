@@ -4,6 +4,7 @@
   "description": "Locomote tycoon bot micro service",
   "main": "index.js",
   "scripts": {
+    "start": "micro -p 3000 index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/damsonn/loco-tycoon/issues"
   },
-  "homepage": "https://github.com/damsonn/loco-tycoon#readme"
+  "homepage": "https://github.com/damsonn/loco-tycoon#readme",
+  "dependencies": {
+    "micro": "^3.0.0"
+  }
 }
