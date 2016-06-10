@@ -1,5 +1,6 @@
 import { send, json } from 'micro'
-import _        from 'lodash'
+import minimax from './lib/minimax'
+import _ from 'lodash'
 
 // return the next moves for a give state
 const play = ({ planes, airports, routes, loyalty, players, currentPlayer }) => {
@@ -31,5 +32,7 @@ const cors = (req, res) => {
 export default async function (req, res) {
   cors(req, res)
   const state = await json(req)
+  console.log('recieved payload')
+  console.log(JSON.stringify(state))
   return play(state)
 }
