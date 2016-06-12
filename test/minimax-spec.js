@@ -33,7 +33,7 @@ describe('minimax', () => {
     })
     it('returns diff when planes are moved', () => {
       const diff = _.cloneDeep(example)
-      // switch locations
+      // move locations
       diff.planes[0].location = 'DUB'
 
       uniqueKey(example).should.not.eql(uniqueKey(diff))
