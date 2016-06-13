@@ -19,15 +19,15 @@ describe('Game', () => {
     })
   })
 
-  describe('#win', () => {
+  describe('#isWin', () => {
     it('returns true if I win', () => {
       const game = new Game(_.cloneDeep(example))
       _.find(game.attrs.airports, { key: 'NYC' }).owner = 'None'
-      game.win().should.be.true
+      game.isWin().should.be.true
     })
     it('returns false if I dont win', () => {
       const game = new Game(example)
-      game.win().should.be.false
+      game.isWin().should.be.false
     })
   })
 
