@@ -12,7 +12,7 @@ describe('minimax', () => {
   })
 
   describe('#cartesianProduct', () => {
-    it('return the an array of the right shape', () => {
+    it('return an array of the right shape', () => {
       const a = [ [1, 2], [3, 4] ]
       const prod = cartesianProduct(a)
       prod.length.should.eql(4)
